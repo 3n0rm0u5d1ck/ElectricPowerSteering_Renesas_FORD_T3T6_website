@@ -1,0 +1,1013 @@
+---
+layout: default
+title: CM012A_FordT3McuCfg_PICRegisterConfiguration
+nav_order: 4
+parent: Component Design
+---
+{% raw %}
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.7.2 (Linux)"/>
+	<meta name="author" content="nz3zln"/>
+	<meta name="created" content="2010-11-16T21:08:58"/>
+	<meta name="changedby" content="Mohan, Raghavendran"/>
+	<meta name="changed" content="2017-07-31T14:37:51"/>
+	<meta name="AppVersion" content="16.0300"/>
+	<meta name="Company" content="Delphi"/>
+	
+	<style type="text/css">
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Arial"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+	</style>
+	
+</head>
+
+<body>
+<table cellspacing="0" border="0">
+	<colgroup width="149"></colgroup>
+	<colgroup width="171"></colgroup>
+	<colgroup width="201"></colgroup>
+	<colgroup width="109"></colgroup>
+	<colgroup width="53"></colgroup>
+	<colgroup width="284"></colgroup>
+	<colgroup width="92"></colgroup>
+	<colgroup width="43"></colgroup>
+	<colgroup width="47"></colgroup>
+	<colgroup width="26"></colgroup>
+	<colgroup width="61"></colgroup>
+	<colgroup width="66"></colgroup>
+	<colgroup width="121"></colgroup>
+	<tr>
+		<td height="48" align="left" valign=middle bgcolor="#FAC090">Register</td>
+		<td align="left" valign=middle bgcolor="#FAC090">Field Names[bit position]</td>
+		<td align="left" valign=middle bgcolor="#FAC090">Address<br>(Hex)</td>
+		<td align="left" valign=middle bgcolor="#FAC090">Address<br>(Dec)</td>
+		<td align="center" valign=middle bgcolor="#FAC090">Setting</td>
+		<td align="left" valign=middle bgcolor="#FAC090">Setting Description</td>
+		<td align="left" valign=middle bgcolor="#FAC090">Requirement</td>
+		<td align="left" valign=middle bgcolor="#FAC090">Mode</td>
+		<td align="left" valign=middle bgcolor="#FAC090">Notes</td>
+		<td align="left" valign=middle bgcolor="#FAC090">Init</td>
+		<td align="left" valign=middle bgcolor="#FAC090">Periodic</td>
+		<td align="left" valign=middle bgcolor="#FAC090"><br></td>
+		<td align="left" valign=middle bgcolor="#FAC090">Write Constraints</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>&lt;PIC2C_base&gt; =  FFD6 8000H</td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle>PIC2CTRGPREMUX0</td>
+		<td align="left" valign=middle>PREMUXn4[29:24]</td>
+		<td align="left" valign=middle>&lt;PIC2C_base&gt; + 00H</td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects GTM trigger for ADCFn scan group 4</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>PREMUXn3[23:18]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="18" sdnum="1033;">18</td>
+		<td align="left" valign=middle>Selects GTM trigger for ADCFn scan group 3</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>PREMUXn2[17:12]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="18" sdnum="1033;">18</td>
+		<td align="left" valign=middle>Selects GTM trigger for ADCFn scan group 2</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>PREMUXn1[11:6]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="18" sdnum="1033;">18</td>
+		<td align="left" valign=middle>Selects GTM trigger for ADCFn scan group 1</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>PREMUXn0[5:0]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects GTM trigger for ADCFn scan group 0</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle>PIC2CTRGPREMUX1</td>
+		<td align="left" valign=middle>PREMUXn4[29:24]</td>
+		<td align="left" valign=middle>&lt;PIC2C_base&gt; + 04H</td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects GTM trigger for ADCFn scan group 4</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>PREMUXn3[23:18]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="25" sdnum="1033;">25</td>
+		<td align="left" valign=middle>Selects GTM trigger for ADCFn scan group 3</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>PREMUXn2[17:12]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="25" sdnum="1033;">25</td>
+		<td align="left" valign=middle>Selects GTM trigger for ADCFn scan group 2</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>PREMUXn1[11:6]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="25" sdnum="1033;">25</td>
+		<td align="left" valign=middle>Selects GTM trigger for ADCFn scan group 1</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>PREMUXn0[5:0]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects GTM trigger for ADCFn scan group 0</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle>PIC2CTRGMUX0</td>
+		<td align="left" valign=middle>MUXn4[16]</td>
+		<td align="left" valign=middle>&lt;PIC2C_base&gt; + 10H</td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects ADCnTRG or GTM trigger for ADCFn scan group 4<br>0: ADCnTRG<br>1: Signal selected by PIC2CTRGPREMUXn.PREMUXn4 bits</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>MUXn3[12]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="1" sdnum="1033;">1</td>
+		<td align="left" valign=middle>Selects ADCnTRG or GTM trigger for ADCFn scan group 3<br>0: ADCnTRG<br>1: Signal selected by PIC2CTRGPREMUXn.PREMUXn3 bits</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>MUXn2[8]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="1" sdnum="1033;">1</td>
+		<td align="left" valign=middle>Selects ADCnTRG or GTM trigger for ADCFn scan group 2<br>0: ADCnTRG<br>1: Signal selected by PIC2CTRGPREMUXn.PREMUXn2 bits</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>MUXn1[4]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="1" sdnum="1033;">1</td>
+		<td align="left" valign=middle>Selects ADCnTRG or GTM trigger for ADCFn scan group 1<br>0: ADCnTRG<br>1: Signal selected by PIC2CTRGPREMUXn.PREMUXn1 bits</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>MUXn0[0]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects ADCnTRG or GTM trigger for ADCFn scan group 0<br>0: ADCnTRG<br>1: Signal selected by PIC2CTRGPREMUXn.PREMUXn0 bits</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle>PIC2CTRGMUX1</td>
+		<td align="left" valign=middle>MUXn4[16]</td>
+		<td align="left" valign=middle>&lt;PIC2C_base&gt; + 14H</td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects ADCnTRG or GTM trigger for ADCFn scan group 4<br>0: ADCnTRG<br>1: Signal selected by PIC2CTRGPREMUXn.PREMUXn4 bits</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>MUXn3[12]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="1" sdnum="1033;">1</td>
+		<td align="left" valign=middle>Selects ADCnTRG or GTM trigger for ADCFn scan group 3<br>0: ADCnTRG<br>1: Signal selected by PIC2CTRGPREMUXn.PREMUXn3 bits</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>MUXn2[8]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="1" sdnum="1033;">1</td>
+		<td align="left" valign=middle>Selects ADCnTRG or GTM trigger for ADCFn scan group 2<br>0: ADCnTRG<br>1: Signal selected by PIC2CTRGPREMUXn.PREMUXn2 bits</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>MUXn1[4]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="1" sdnum="1033;">1</td>
+		<td align="left" valign=middle>Selects ADCnTRG or GTM trigger for ADCFn scan group 1<br>0: ADCnTRG<br>1: Signal selected by PIC2CTRGPREMUXn.PREMUXn1 bits</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>MUXn0[0]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects ADCnTRG or GTM trigger for ADCFn scan group 0<br>0: ADCnTRG<br>1: Signal selected by PIC2CTRGPREMUXn.PREMUXn0 bits</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle>PIC2CEDGSEL0</td>
+		<td align="left" valign=middle>EDGSELn4[9:8]</td>
+		<td align="left" valign=middle>&lt;PIC2C_base&gt; + 18H</td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Select active edge on ADCFn scan group 4<br>00: Rising edge<br>01: Falling edge<br>10: Both edges<br>11: Setting prohibited</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>EDGSELn3[7:6]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Select active edge on ADCFn scan group 3<br>00: Rising edge<br>01: Falling edge<br>10: Both edges<br>11: Setting prohibited</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>EDGSELn2[5:4]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Select active edge on ADCFn scan group 2<br>00: Rising edge<br>01: Falling edge<br>10: Both edges<br>11: Setting prohibited</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>EDGSELn1[3:2]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Select active edge on ADCFn scan group 1<br>00: Rising edge<br>01: Falling edge<br>10: Both edges<br>11: Setting prohibited</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>EDGSELn0[1:0]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Select active edge on ADCFn scan group 0<br>00: Rising edge<br>01: Falling edge<br>10: Both edges<br>11: Setting prohibited</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle>PIC2CEDGSEL1</td>
+		<td align="left" valign=middle>EDGSELn4[9:8]</td>
+		<td align="left" valign=middle>&lt;PIC2C_base&gt; + 1CH</td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Select active edge on ADCFn scan group 4<br>00: Rising edge<br>01: Falling edge<br>10: Both edges<br>11: Setting prohibited</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>EDGSELn3[7:6]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Select active edge on ADCFn scan group 3<br>00: Rising edge<br>01: Falling edge<br>10: Both edges<br>11: Setting prohibited</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>EDGSELn2[5:4]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Select active edge on ADCFn scan group 2<br>00: Rising edge<br>01: Falling edge<br>10: Both edges<br>11: Setting prohibited</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>EDGSELn1[3:2]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Select active edge on ADCFn scan group 1<br>00: Rising edge<br>01: Falling edge<br>10: Both edges<br>11: Setting prohibited</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>EDGSELn0[1:0]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Select active edge on ADCFn scan group 0<br>00: Rising edge<br>01: Falling edge<br>10: Both edges<br>11: Setting prohibited</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle>PIC2CENP2TIM0</td>
+		<td align="left" valign=middle>ENP2TIM07[15:14]</td>
+		<td align="left" valign=middle>&lt;PIC2C_base&gt; + 20H</td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM0_7<br>00: GTM0I7<br>01: Off<br>10: Off<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM06[13:12]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM0_6<br>00: GTM0I6<br>01: RLIN31RX<br>10: Off<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM05[11:10]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM0_5<br>00: GTM0I5<br>01: RLIN30RX<br>10: Off<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM04[9:8]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM0_4<br>00: GTM0I4<br>01: ADCF0 SG4 interrupt<br>10: Off<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM03[7:6]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM0_3<br>00: GTM0I3<br>01: ADCF0 SG3 interrupt<br>10: Off<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM02[5:4]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM0_2<br>00: GTM0I2<br>01: ADCF0 SG2 interrupt<br>10: Off<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM01[3:2]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM0_1<br>00: GTM0I1<br>01: ADCF0 SG1 interrupt<br>10: Off<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM00[1:0]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM0_0<br>00: GTM0I0<br>01: ADCF0 SG0 interrupt<br>10: Off<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle>PIC2CENP2TIM1</td>
+		<td align="left" valign=middle>ENP2TIM17[15:14]</td>
+		<td align="left" valign=middle>&lt;PIC2C_base&gt; + 24H</td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM1_7<br>00: GTM1I7<br>01: Off<br>10: Off<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="105" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM16[13:12]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM1_6<br>00: GTM1I6<br>01: RLIN33RX (Available only in P1H-C, P1H-CE; otherwise off)<br>10: Off<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="105" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM15[11:10]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM1_5<br>00: GTM1I5<br>01: RLIN32RX (Available only in P1H-C, P1H-CE; otherwise off)<br>10: Off<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM14[9:8]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM1_4<br>00: GTM1I4<br>01: ADCF0 SG4 interrupt<br>10: ADCF1 SG4 interrupt<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM13[7:6]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM1_3<br>00: GTM1I3<br>01: ADCF0 SG3 interrupt<br>10: ADCF1 SG3 interrupt<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM12[5:4]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM1_2<br>00: GTM1I2<br>01: ADCF0 SG2 interrupt<br>10: ADCF1 SG2 interrupt<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM11[3:2]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM1_1<br>00: GTM1I1<br>01: ADCF0 SG1 interrupt<br>10: ADCF1 SG1 interrupt<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="88" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>ENP2TIM10[1:0]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Selects input signal for TIM1_0<br>00: GTM1I0<br>01: ADCF0 SG0 interrupt<br>10: ADCF1 SG0 interrupt<br>11: Off</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="17" align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+	</tr>
+	<tr>
+		<td height="70" align="left" valign=middle>PIC2CENHIZDTM</td>
+		<td align="left" valign=middle>HIZ2ECM[5]</td>
+		<td align="left" valign=middle>&lt;PIC2C_base&gt; + 28H</td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Enables/disables Hi-Z control by ECM for GTM ATOM2 outputs<br>0: Disabled<br>1: Enabled</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="70" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>HIZ1ECM[4]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Enables/disables Hi-Z control by ECM for GTM ATOM1 outputs<br>0: Disabled<br>1: Enabled</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="70" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>HIZ0ECM[3]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Enables/disables Hi-Z control by ECM for GTM ATOM0 outputs<br>0: Disabled<br>1: Enabled</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="70" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>HIZ2ESO[2]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Enables/disables Hi-Z control by ESO2Z for GTM ATOM2 outputs<br>0: Disabled<br>1: Enabled</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="70" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>HIZ1ESO[1]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Enables/disables Hi-Z control by ESO1Z for GTM ATOM1 outputs<br>0: Disabled<br>1: Enabled</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+	<tr>
+		<td height="70" align="left" valign=middle><br></td>
+		<td align="left" valign=middle>HIZ0ESO[0]</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="center" valign=middle sdval="0" sdnum="1033;">0</td>
+		<td align="left" valign=middle>Enables/disables Hi-Z control by ESO0Z for GTM ATOM0 outputs<br>0: Disabled<br>1: Enabled</td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle><br></td>
+		<td align="left" valign=middle>R/W</td>
+	</tr>
+</table>
+<!-- ************************************************************************** -->
+</body>
+
+</html>
+
+{% endraw %}
